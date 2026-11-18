@@ -1,0 +1,10 @@
+import pandas as pd
+series_a=pd.Series([40,50,60,70,80])
+series_b=pd.Series([50,60,70,80,90])
+not_common=pd.Series(list(set(series_a).symmetric_difference(set(series_b))))
+print(not_common)
+print(series_a.min())
+print(series_a.max())
+print(series_b.sum())
+print(series_a.mean())
+print(series_b.median())
